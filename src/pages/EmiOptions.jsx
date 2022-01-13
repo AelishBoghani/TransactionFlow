@@ -1,12 +1,13 @@
 import { Button, Container, Typography } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import EmiHeader from "../components/EmiHeader";
 import EmiOptionsCard from "../components/EmiOptionsCard";
 import TransactionHeader from "../components/TransactionHeader";
 
 function EmiOptions() {
   return (
-    <Container maxWidth="sm" style={{marginTop: '20px'}}>
+    <Container maxWidth="sm" style={{ marginTop: "20px" }}>
       <div>
         <TransactionHeader />
         <EmiHeader />
@@ -24,14 +25,17 @@ function EmiOptions() {
         <EmiOptionsCard />
         <EmiOptionsCard />
         <EmiOptionsCard />
-       
       </div>
       <h5 className="emi__text">* EMI has been rounded up to the next rupee</h5>
-      <div className="btn__css__emi">
-      <Button variant="contained" color="success" >
-              Confirm
-            </Button>
-      </div>
+
+      <Link to="/confirmation" style={{ textDecoration: "none" }}>
+        <div className="btn__css__emi">
+          <Button variant="contained" color="success">
+            Confirm
+          </Button>
+        </div>
+      </Link>
+
       <div className="cancel__transaction">
         <a href="#">Cancel Transaction</a>
       </div>
