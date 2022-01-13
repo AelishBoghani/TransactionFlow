@@ -1,4 +1,5 @@
 import React from "react";
+import CancelTransaction from "../components/CancelTransaction";
 import LenderCard from "../components/LenderCard";
 import TransactionHeader from "../components/TransactionHeader";
 
@@ -17,9 +18,7 @@ function Lenders() {
       <LenderCard />
       <LenderCard />
       <LenderCard />
-      <div className="cancel__transaction">
-        <a href="#">cancel Transaction</a>
-      </div>
+      <CancelTransaction/>
     </div>
   );
 }

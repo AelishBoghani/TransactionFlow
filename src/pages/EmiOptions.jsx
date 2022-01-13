@@ -1,6 +1,7 @@
 import { Button, Container, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import CancelTransaction from "../components/CancelTransaction";
 import EmiHeader from "../components/EmiHeader";
 import EmiOptionsCard from "../components/EmiOptionsCard";
 import TransactionHeader from "../components/TransactionHeader";
@@ -35,10 +36,11 @@ function EmiOptions() {
           </Button>
         </div>
       </Link>
+      <CancelTransaction/>
 
-      <div className="cancel__transaction">
+      {/* <div className="cancel__transaction">
         <a href="#">Cancel Transaction</a>
-      </div>
+      </div> */}
     </Container>
   );
 }
