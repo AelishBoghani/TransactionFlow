@@ -2,11 +2,13 @@ import * as React from "react";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import { Button, Card, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Transaction() {
   return (
     <div className="transaction__page">
       <Card className="transaction__card">
+        <h1>Transaction Page</h1>
         <div className="transaction__grid1">
           <FormControl>
             <TextField
@@ -29,9 +31,11 @@ export default function Transaction() {
           </FormControl>
         </div>
         <div>
-          <Button variant="contained" color="success" className="btn__css">
-            Continue
-          </Button>
+          <Link to="/lenderslist" className="transaction__link">
+            <Button variant="contained" color="success" className="btn__css">
+              Continue
+            </Button>
+          </Link>
         </div>
       </Card>
     </div>

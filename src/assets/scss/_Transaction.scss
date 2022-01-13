@@ -4,6 +4,7 @@
     justify-content: center;
     text-align: center;
     width: 100%;
+   
 
     .transaction__card{
         width: 80%;
@@ -17,7 +18,7 @@
 
     .transaction__grid1{
         margin-bottom: 5px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
     .transaction__grid2{
         margin-bottom: 5px;
@@ -25,7 +26,9 @@
     }
     .btn__css{
         margin-top: 15px;
-        margin-bottom: 5px;
-        
+        margin-bottom: 5px;   
+    }
+    .transaction__link{
+        text-decoration: none;
     }
 }
