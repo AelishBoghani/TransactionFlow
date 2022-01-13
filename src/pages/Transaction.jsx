@@ -31,11 +31,14 @@ export default function Transaction() {
           </FormControl>
         </div>
         <div>
-          <Link to="/lenderslist" className="transaction__link">
+          <Link to="/lenders-list" className="transaction__link">
             <Button variant="contained" color="success" className="btn__css">
               Continue
             </Button>
           </Link>
+        </div>
+        <div className="cancel__transaction">
+          <a href="#">cancel Transaction</a>
         </div>
       </Card>
     </div>

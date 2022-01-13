@@ -24,4 +24,27 @@
 .emi__header--details{
     color: #323232;
     text-align: right;
+    
+}
+.emi__text{
+    opacity: 0.6;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.number{
+    display: flex;
+}
+.btn__css__emi{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cancel__transaction{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+a{
+    color: black;
+    opacity: 0.6;
 }

@@ -1,5 +1,6 @@
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LenderCard() {
   return (
@@ -14,7 +15,9 @@ function LenderCard() {
         </h5>
       </div>    
       <div className='lender__arrow'>
-        <ArrowForwardIosIcon />
+          <Link to="/emi-selection">
+          <ArrowForwardIosIcon />
+          </Link>
       </div>
     </div>
   );

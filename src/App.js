@@ -11,7 +11,7 @@ function App() {
         <Route path="/" element={<Transaction />}/>
         <Route path="/emi-selection" element={<EmiOptions />} />
         <Route path="/" element={<Transaction />}  />
-        <Route path="/lenderslist" element={<Lenders />}/>
+        <Route path="/lenders-list" element={<Lenders />}/>
       </Routes>
     </BrowserRouter>
   );

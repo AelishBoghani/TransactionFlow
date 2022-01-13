@@ -17,8 +17,8 @@ function Lenders() {
       <LenderCard />
       <LenderCard />
       <LenderCard />
-      <div className="cancle__transaction">
-        <a href="#">Cancle Transaction</a>
+      <div className="cancel__transaction">
+        <a href="#">cancel Transaction</a>
       </div>
     </div>
   );

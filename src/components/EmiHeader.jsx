@@ -4,8 +4,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import { Link ,useNavigate} from "react-router-dom";
 
 const EmiHeader = () => {
+  const history = useNavigate();
+
   return (
     <AppBar className="emi__header" position="static">
       <Container maxWidth="xl">
@@ -17,7 +20,10 @@ const EmiHeader = () => {
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
             <div>
-                <KeyboardArrowLeftIcon className="emi__header--back-button" fontSize="large" style={{fill: 'black'}}/>
+              <Link to="/lenders-list">
+              <KeyboardArrowLeftIcon onClick={history.goBack} className="emi__header--back-button" fontSize="large" style={{fill: 'black'}}/>
+              </Link>
+               
 
               <img
                 src="https://iccdn.in/lenders/icici-main-logo-v3.svg"
