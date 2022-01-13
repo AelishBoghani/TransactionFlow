@@ -1,10 +1,14 @@
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Route, Routes, Link, Switch } from "react-router-dom";
+import Transaction from "./pages/Transaction";
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hello World</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Transaction />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
