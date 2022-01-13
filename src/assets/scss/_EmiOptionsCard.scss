@@ -1,0 +1,82 @@
+.emi__panel{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 24px 0 rgba(0,0,0,.12)!important;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,.1);
+    align-self: center;
+    margin: 0 auto;
+    object-fit: contain;
+    margin-top: 10px;
+    
+    
+    .amount__details{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .text__details{
+        font-size: 12px;
+        opacity: .6;
+        padding-top: 1px;
+    }
+    .radio__button{
+        align-self: center;
+        size: 40px;
+        
+    }
+    .emi__details{
+        height: 56px;
+        justify-content: space-between;
+    }
+
+    .emi__grid1{
+        // border: 2px red solid;
+        display: flex;
+        width: 33%;
+        height: 100%;
+        align-self: center;
+        justify-content: space-evenly;
+        background-color: #f7f7f7;
+        border-radius: 6px;
+
+    }
+    .emi__grid2{
+        // border: 2px red solid;
+        width: 33%;
+        height: 100%;
+        align-self: center;
+        border-radius: 6px;
+        text-align: center;
+    }
+    .emi__grid3{
+        // border: 2px red solid;
+        width: 33%;
+        height: 100%;
+        align-self: center;
+        border-radius: 6px;
+        text-align: center;
+    }
+}
+
+.cursurPointer{
+    cursor: pointer;
+}
+
+label{
+    display: block;
+   
+    
+}
+
+.active__panel{
+    box-shadow: 0 3px 1px -2px rgba(34,153,90,.4),0 2px 2px 0 rgba(34,153,90,.34),0 1px 5px 0 rgba(34,153,90,.34)!important;
+    border: 1px solid #22995a;
+
+
+    .emi__grid1{
+        background-color: rgba(26,188,112,.12);
+    }
+}
+

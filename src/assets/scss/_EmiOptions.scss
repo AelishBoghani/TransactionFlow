@@ -1,0 +1,27 @@
+.emi-options{
+    border: 1px solid red;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.emi-options__headers{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.emi-options__title{
+    color: #323232;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.emi__header{
+    background: #F9F9F9 !important;
+}
+
+.emi__header--details{
+    color: #323232;
+    text-align: right;
+}
