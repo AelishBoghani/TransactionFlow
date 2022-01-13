@@ -1,0 +1,31 @@
+.lender__card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 72px;
+    border-radius: 10px;
+    // border: 2px red solid;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    h5{
+        opacity: 0.6;
+    }
+    .lender__arrow{
+        
+        color: green;
+    }
+    span{
+        color: green;
+    }
+
+    img{
+        margin-left: 10px;
+    }
+
+    div{
+        // border: 2px solid red;
+        align-self: center;
+    }
+
+}
