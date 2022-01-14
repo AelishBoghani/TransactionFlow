@@ -4,6 +4,7 @@ import Transaction from "./pages/Transaction";
 import EmiOptions from "./pages/EmiOptions";
 import Lenders from "./pages/Lenders";
 import Confirmation from "./pages/Confirmation";
+import PaymentEnd from "./pages/PaymentEnd";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/emi-selection" element={<EmiOptions />} />
         <Route path="/lenders-list" element={<Lenders />}/>
         <Route path="/confirmation" element={<Confirmation />}/>
+        <Route path="/paymentstatus" element={<PaymentEnd />}/>
 
       </Routes>
     </BrowserRouter>

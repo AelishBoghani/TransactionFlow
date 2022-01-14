@@ -31,15 +31,21 @@ export default function Transaction() {
           </FormControl>
         </div>
         <div>
-          <Link to="/lenders-list" className="transaction__link">
-            <Button variant="contained" color="success" className="btn__css">
-              Continue
-            </Button>
+          <Link
+            to="/lenders-list"
+            className="transaction__link"
+            style={{ textDecoration: "none" }}
+          >
+            <div className="btn__css">
+              <Button variant="contained" color="success">
+                Continue
+              </Button>
+            </div>
           </Link>
         </div>
-        <div className="cancel__transaction">
-          <a href="#">cancel Transaction</a>
-        </div>
+        {/* <div className="cancel__transaction">
+          <a href="#">Cancel Transaction</a>
+        </div> */}
       </Card>
     </div>
   );

@@ -1,9 +1,11 @@
 import React from 'react'
 import EmiHeader from '../components/EmiHeader'
 import TransactionHeader from '../components/TransactionHeader'
+import TwoFACard from '../components/TwoFACard'
 import VerificationCard from '../components/VerificationCard'
 
 function Confirmation() {
+    
     return (
         <div className='confirmation__container'>
             <TransactionHeader/>
@@ -12,6 +14,7 @@ function Confirmation() {
             <div>
                 <VerificationCard/>
             </div>
+            
         </div>
     )
 }

@@ -5,6 +5,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { Link } from 'react-router-dom';
 
 export default function CancelTransaction() {
   const [open, setOpen] = React.useState(false);
@@ -41,9 +42,11 @@ export default function CancelTransaction() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} variant="contained" color="success">Continue With Transaction</Button>
-          <Button onClick={handleClose} variant="outlined" color="error">
+          <Link to="/">
+          <Button onClick={handleClose} variant="outlined" color="error" >
             Cancel Transaction
           </Button>
+          </Link>
         </DialogActions>
       </Dialog>
     </div>
