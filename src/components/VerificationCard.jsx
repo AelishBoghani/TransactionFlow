@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import TwoFACard from "./TwoFACard";
 
 function VerificationCard() {
-  var [active, setActive] = useState(false);
+  var [active, setActive] = useState(true);
 
   function handleChange() {
     setActive(!active);
